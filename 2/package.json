@@ -1,0 +1,33 @@
+{
+  "name": "2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --expand",
+    "test:param": "jest ./src/param-unit.test.ts",
+    "test:fixtures": "jest ./src/fixtures/fixtures.test.ts",
+    "fixtures:run": "esmo ./src/fixtures/run.ts",
+    "fixtures:clean": "rimraf ./src/fixtures.test.js",
+    "fixtures": "pnpm run fixtures:clean && pnpm run fixtures:run",
+    "fixtures:watch": "nodemon --watch ./fixtures --ignore ./fixtures/tests --exec \"npm run fixtures:run\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.8.1",
+    "@types/jest": "^27.0.1",
+    "@types/jest-each": "^24.3.0",
+    "esbuild-node-loader": "^0.3.1",
+    "eslint": "^7.32.0",
+    "esno": "^0.9.1",
+    "jest": "^27.1.1",
+    "jest-each": "^27.1.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.0.5",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  }
+}

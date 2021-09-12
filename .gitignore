@@ -1,0 +1,4 @@
+# microsoft office tmp files
+~*
+*.tmp
+node_modules/
