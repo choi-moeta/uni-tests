@@ -29,10 +29,6 @@ export class Rational {
     return this.#divisor
   }
 
-  /**
-   * Get the string "a/b"
-   * @return {number} divisor.
-   */
   static parse(line: string): Rational | null {
     const result = line.match(/^(?:([+-]?)(\d+(?:\.\d*)?|\.\d+)(?:\s*\/\s*([+-]?)(\d+(?:\.\d*)?|\.\d+))?)$/i)
 

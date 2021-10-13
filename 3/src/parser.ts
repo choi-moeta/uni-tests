@@ -12,7 +12,6 @@ export enum Token {
 
 export class Parser {
   static processLine(line: string): Token {
-  // remove all whitespaces from the input string
     line.replace("\\s+", "")
 
     switch (line) {
